@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  touch-action: manipulation;
+}
+
+html, body {
+  height: 100%;
+  overflow: hidden;
+  background: #0f0f0f;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont;
+  color: #e5e5e5;
+}
+
+.app {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  gap: 16px;
+}
+
+header {
+  text-align: center;
+}
+
+header h1 {
+  font-size: 28px;
+  letter-spacing: 1px;
+}
+
+header p {
+  font-size: 13px;
+  opacity: 0.6;
+}
+
+.add {
+  display: grid;
+  gap: 10px;
+}
+
+input {
+  background: #1c1c1c;
+  border: none;
+  padding: 14px;
+  border-radius: 10px;
+  color: white;
+  font-size: 15px;
+}
+
+input:focus {
+  outline: 2px solid #4f46e5;
+}
+
+button {
+  background: #4f46e5;
+  border: none;
+  padding: 14px;
+  border-radius: 10px;
+  font-size: 15px;
+  color: white;
+  font-weight: 600;
+}
+
+.list {
+  flex: 1;
+  overflow: hidden;
+  display: grid;
+  gap: 12px;
+}
+
+.card {
+  background: #1c1c1c;
+  border-radius: 14px;
+  padding: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card strong {
+  font-size: 15px;
+}
+
+.time {
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+.remove {
+  background: transparent;
+  color: #ef4444;
+  font-size: 14px;
+}
